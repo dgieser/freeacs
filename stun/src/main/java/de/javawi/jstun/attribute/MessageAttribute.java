@@ -129,6 +129,7 @@ public abstract class MessageAttribute implements MessageAttributeInterface {
 
   /**
    * Abstract public MessageAttribute parse(byte[] data) throws MessageAttributeParsingException;.
+   * Test from Dan
    */
   public int getLength() throws UtilityException {
     return getBytes().length;
