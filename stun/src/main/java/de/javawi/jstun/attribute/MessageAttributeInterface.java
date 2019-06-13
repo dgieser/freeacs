@@ -25,7 +25,8 @@ public interface MessageAttributeInterface {
     ReflectedFrom,
     ConnectionRequestBinding,
     BindingChange,
-    Dummy
+    Dummy,
+    XORMAPPEDADDRESS
   }
 
   int MAPPEDADDRESS = 0x0001;
@@ -42,4 +43,5 @@ public interface MessageAttributeInterface {
   int CONNECTIONREQUESTBINDING = 0xC001;
   int BINDINGCHANGE = 0xC002;
   int DUMMY = 0x0000;
+  int XORMAPPEDADDRESS = 0x8020;
 }

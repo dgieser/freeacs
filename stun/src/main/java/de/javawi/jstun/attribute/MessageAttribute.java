@@ -76,6 +76,9 @@ public abstract class MessageAttribute implements MessageAttributeInterface {
     if (type == MessageAttributeType.Dummy) {
       return DUMMY;
     }
+    if (type == MessageAttributeType.XORMappedAddress) {
+        return XORMAPPEDADDRESS;
+      }
     return -1;
   }
 
@@ -122,6 +125,9 @@ public abstract class MessageAttribute implements MessageAttributeInterface {
     if (type == DUMMY) {
       return MessageAttributeType.Dummy;
     }
+    if (type == XORMAPPEDADDRESS) {
+        return MessageAttributeType.XORMappedAddress;
+      }
     return null;
   }
 
@@ -129,7 +135,6 @@ public abstract class MessageAttribute implements MessageAttributeInterface {
 
   /**
    * Abstract public MessageAttribute parse(byte[] data) throws MessageAttributeParsingException;.
-   * Test from Dan
    */
   public int getLength() throws UtilityException {
     return getBytes().length;
