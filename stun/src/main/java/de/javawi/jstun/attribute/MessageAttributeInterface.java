@@ -26,7 +26,7 @@ public interface MessageAttributeInterface {
     ConnectionRequestBinding,
     BindingChange,
     Dummy,
-    XORMAPPEDADDRESS
+    XORMappedAddress
   }
 
   int MAPPEDADDRESS = 0x0001;
